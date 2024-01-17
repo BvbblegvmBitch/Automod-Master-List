@@ -184,3 +184,85 @@ report_reason: "Possible Racism - [{{match}}]"
     action: filter
     action_reason: Possible hate/sexual speech [{{match-1}}]
 ---
+
+---
+
+# [ID-antiBlack]
+type: comment
+body (regex, includes):
+  - '\bn(ea|ei?|[i!*]+)((g|q)+|bb+)((a+r?|e+r|let|nog|u+h?|s)s?)?\b(?#N-word yellowmix 20220216)'
+  - '\b13%\b(?# of the population)'
+  - '\bapes\b'
+  - '\bbiden''s america\b'
+  - '\bblack( on black| people moment|.?washing| youth)\b'
+  - '\bblm they said\b'
+  - '\bbI@ccs\b'
+  - '\b(black|blm) at it again\b'
+  - '\bburn loot murder\b'
+  - '\bcertain (areas|people)\b'
+  - '\bcultur(al|e) problem\b'
+  - '\bcry racis(m|t)\b'
+  - '\bdark(ie|y)s?\b'
+  - '\b(dey|di+ndu+|nu+ff(i+)?n.?)\b'
+  - '\bfood stamps?\'
+  - 'groids?\b'
+  - '\bit''s (always blacks|what they do)\b'
+  - '\bjoggers?\b'
+  - '\bjungle bunn\w*\b'
+  - '\bknee.?g'
+  - '\bmake me( a)? racist'
+  - '\bmonkeys\b'
+  - '\bmoon.?crickets?\b'
+  - '\bmost valued part of society\b'
+  - '\bmu+h\b'
+  - '\boo+ga+(.boo+ga+)?\b'
+  - '\bray+(c|s)is+\b'
+  - '\bsame demographic\b'
+  - '\b(poo|shit)skins?\b'
+  - '\bthank( the)? democrats\b'
+  - '\bthe blacks\b'
+  - '\bthugs?\b'
+  - '\btypical behavior\b'
+  - '\byo(oof|uth)s\b'
+  - '01(0|1)01110 01(0|1)01001 01(0|1)00111 01(0|1)00111 01(0|1)00101 01(0|1)10010(?#N-word binary)'
+  - '\bчернокожий\b(?#black in Russian)'
+  - '\b卐\b'
+action: remove
+action_reason: "[ID-antiBlack] anti-Black? [{{match}}]"
+
+---
+# [ID-BLMcombo]
+type: comment
+body: 'blm'
+body#2 (regex):
+  - 'loot(er|ing)?'
+  - 'riot(er|ing)?s?'
+action: remove
+action_reason: "[ID-BLMcombo] anti-Black? [{{match}}]"
+
+---
+# [ID-NwordStarter]
+type: comment
+is_top_level: true
+body_shorter_than: 2
+body (case-sensitive): 'N'
+action: remove
+action_reason: "[ID-NwordStarter] anti-Black? [{{match}}]"
+
+---
+# [ID-NwordStarterChild] it's a child or Automoderator lags
+type: comment
+body_shorter_than: 2
+body (regex, case-sensitive): '(E|G|I|N|R)'
+action: remove
+action_reason: "[ID-NwordStarterChild] anti-Black? [{{match}}]"
+---
+
+---
+# remove (potentially) hateful comments
+type: comment
+body (includes-word): ["animals", "ape", "apes", "monkey", "monkeys", "monkies", "primate", "primates", "savages", "subhuman", "subhumans", "sub human", "sub humans", "shithole", "shitholes", "degenerate", "degenerates", "degenerative", "degeneracy", "filth", "cocofelon", "cocofelons", "dindu", "dindu nuffin", "dindunuffin", "dindunuffins", "didntdonuffin", "nofin", "noffin", "nutin", "nuttin", "fatherless", "diversity", "diverse", "enriched", "enrichment", "fascinating behavior", "mostly peaceful", "peaceful", "repatriations", "denominator", "typical", "pattern recognition", "usual suspects", "culture", "multiculturality", "stereotype", "stereotypes", "floyed", "black lives matter", "white lives matter", "blm", "mlk", "wpww", "13%", "13 %", "13/50", "13/52", "13-50", "13ers", "tnb", "basketball", "basket ball", "hoodlife", "hoodrat", "hoodrats", "hood rat", "hood rats", "ghetto", "Wakanda", "juneteenth", "Juneteenth", "reparations", "nig", "nigs", "nigg", "niggs", "nigga", "niggas", "niggah", "nigger", "niggers", "n1gger", "n1ggers", "n i g g e r", "n i g g e r s", "n****r", "n*****", "n****rs", "n***a", "n***as", "nibba", "nibbas", "niggarific", "niggariffic", "niggariphic", "nigfag", "niglet", "niglets", "neega", "neegah", "negro", "negros", "nagger", "naggers", "ni66@", "ni66@$", "chigger", "chiggers", "blacktivity", "blacktivities", "Schwarze", "cotton", "spearchucker", "spearchuckers", "chucker", "chuckers", "unga bunga", "jiggaboo", "jiggaboos", "wuz kangs", "wuz kings", "well well well", "well, well, well", "content of their character", "socioeconomic", "socio-economic", "affirmative action", "never relax", "he relaxed", "scholar", "scholars", "import the third world", "import the 3rd world", "kaffer", "kaffir", "cafri", "kaffers", "kaffirs", "cafris", "DEI", "whitey", "wheaty", "wheati", "wheaties", "wypipo", "wypipos", "chink", "chinks", "ching", "chings", "paki", "pakis", "goatfucker", "goat fucker", "goatfuckers", "goat fuckers", "Muzzie", "Muzzies", "religion of peace", "sudaca", "sudacas", "europoor", "euro poor", "europoors", "euro poors", "white trash", "cracker", "crackers", "kracker", "Krak3r", "kike", "kikes", "J3w", "J3ws", "orc", "orcs", "gypsy", "gypsies", "pikey", "pikeys", "alphabet people", "fag", "fags", "faggot", "faggots", "dyke", "dike", "dykes", "tranny", "trannies", "sissy", "bootlicker", "boot licker", "bootlickers", "boot lickers", "copacanda", "pig", "pigs", "piggy", "piggies", "glowie", "glowies", "Glowies", "feds", "retard", "retards", "retarded", "retardation", "fatty", "fatties", "Karen", "Karens", "females", "bitch", "bitches", "slut", "sluts", "hoe", "hoes", "cunt", "cunts", "whore", "whores", "good riddance", "dox", "doxed", "doxx", "doxxed", "invasion", "invading", "invaders", "illegals", "rapefugee", "rapefugees", "Soros", "WLM"]
+action: remove
+action_reason: "Likely hateful phrase/word - [{{match}}]"
+
+---
