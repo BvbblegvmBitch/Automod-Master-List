@@ -1,0 +1,186 @@
+# Filter forbidden language - Possible Arguments 
+type: any
+title+body (regex): 
+  - '(?#go fuck..[yourself/etc.], go suck..)(?=go)(?<![\"“”‟„])(?<!Two Feet - )go ((?#fuck/frick/etc. when used as part of a phrase)(F+|P+h+|(?=Ef))(([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))|(?#   )(?#F/Frick/etc.)(?!(?<=F)(reak|lip)\S* out)(?<=F)(r[iea]+([ck]+|(?<=i)g+)|lip)?|Ef+(?!f))(?<!\bFAQ)(?<!(?-i:\bF[A-Z]\b))(?<!(?-i:\b[FP][A-Z]{2}\b))[s5]?(?# << End of "fuck"  )|suck)(?! itself| Yourself([\"“”‟„]| by Two Feet))' # ("Go Fuck Yourself" is a song by two feet)
+  - '(?#Fuck off/Fuck you/F yourself/fuck this/fuck OP/etc.)(?=F+|P+h+|Ef)(?<!(holy|said) )(?<!saying )(?<! [\-–−—] )(?#fuck when used as part of a phrase)(F+|P+h+|(?=Ef))(([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))(?<!\bFAQ)|Ef+(?! this))(?# << End of "fuck"  )(?! you\W?re right| You\]| You by)(\.(?= \w+\b(?! \w)))? (?#        2nd Part >>)((?#   )(?=Off)(?<!the fuck )(?<!\bI fuck )(?<!\bI\Wll fuck )(?<!\bI\Wd fuck )(?<!would fuck )(?<!else can fuck )(?<!people can fuck )(?<!will fuck )(?<!(?-i:FCC) )Off(?! the\b)|(?#   )(?#You/your)(y+[o0u]+r*|u+r*)\b(?<!\b\w\WF\WU)(?!(?<=F\WU)\W\w\b|((?#are)[ ''‘’´`]?a?re?)?( \w+)? (good|right|correct|amazing|awesome|great))(?<!they fuck you)(\W?sel(f|ves))?|(?#   )Is wrong(?<!\bF Is wrong(?! wit?h))|(?#   )(?#This)(th|d)(is|(?<=th)s)(?![\"“”‟„''‘’´`]| (is|made|real+y|trul+y|actual+y|honestly|genuinely|easily|up))|(?#   )OP)' # ("F off/F this" is in the reporting section) )| the "(?<! [\-–−—] )" and "You\]" are for ignoring song titles [] the "(\.(?= \w+\b(?! \w)))?" is to match "Fuck. Off." [] The "(?<!\b\w\WF\WU)(?!(?<=F\WU)\W\w\b" is to ignore F U if it's part of something like F U N
+  - '(?#screw off/screwoff/screw you/screw this)screw\W?(Off(?! the| an?\b)(?<!to screw off)|(?#You/your)(y+[o0u]+r*|u+r*)(\W?sel(f|ves))?(?<!they screw you)(?! up)|(?#This)(th|d)(is|(?<=th)s)(?!( part)? (off|up)| country|[\W_]+let[''‘’´`]?s)(?<!always screw this))'
+  - 'sod off'
+  - '(?#get fucked/get lost/etc.)(?=get)(?<!\bI )(?<!it (can|may) )(?<!will )(?<!(would|could|might) )(?<!\b[''‘’´`]ll )(?<!\b[''‘’´`]d )(?<!don\Wt wanna )(?<!don\Wt want to )(?<!how you )Get ((?#fucked)(F+|P+h+)([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))(?#ed)[e3''‘’´`]?[dt](?! up)(?# << End of "fucked"  )|(?#shit)[s5$z]+h+([i1!¡jla]|(?!(eets?|iites?)\b)[i1!¡jle3]{2,})([t7]|(?<!a)z+|\\*[*_])e* on|(?# options only at end of sentences/etc. or with specific words after> )(bent(?<!n[o''‘’´`]t get bent)|w?re[ck]+[e3''‘’´`]?[dt]|wh?acked|(?<!to get )lost(?! in| with))(?![\"“”‟„''‘’´`]\B)((?! [a-z]|[\"“”‟„])| (my )?((wo)?man|dude|mate|m8|bro(ther)?|bruh|lady|(?#you/yo)(Y+[o0ua]+|U+)\b|and|or|tho(ugh)?)))'
+  - '(?#suck it/suck me off)suck (it(?! \w)|me)'
+  - '(?#eat shit/suck my balls/etc.)(?=(Suck|(?#Eat)E[ae]t(?!ing shit|\w* shit (off|on|from))|Drink|Swallow|Lick|Kiss|Guzzle?|(?#gargle/gurgle)g[ua]rgl\w+|Choke?)([s5]|ing|er)?\b)(?<!\bI )(?<!\bI\Wll )(?<!\bI will )(?<!\bI would )(?# Matching the actual Suck/etc. word >> )\S+ ((on|my|(?#your)(y([o0u]+r|o)|ur)|an?|some) )*(\S+ ){0,2}?((?#Dick)d[i1!¡jl][ck]+|(?#Penis)p[e3]n[i1!¡jl][s5]|(?#prick)pr[i1!¡jl]ck|(?#weiner)w[ei]{2}ner|ween(ie)?|peen(er)?|sc?hlong|(?#willy)will(y|ies)|pecker|(ding\W)?dong|P(ee\W?)?P(ee)?|wee\W?wee|(foreskin|4skin)|balls|my (nuts?|ball)|(?#testicles)(?#Testicles)testi(cle|e)s?|scrotum|scrote|taint|gooch|pube|pubic hair|(?#pussy/ies and puss)p[uv][s5$z]+(y|[i1!¡jl][e3](?<!puzzle))?s?|(?#vagina)vag(ina)?|vulva|(?#cooter/cooch)[CK]oo(ter|t?ch)|snatch|muff|minge|clunge|labia|clit(oris)?|(?#nipples)nip(ple|s)|(?#tits/tiddies/etc.)ti(t+|d{2})(y|ie)?|breasts|boobs?|butt|(?#ass)([a@]|4(?!5))([s5$z]{2}|r+[s5$z][e3])|anus|(?#shit)[s5$z]+h+([i1!¡jla]|(?!(eets?|iites?)\b)[i1!¡jle3]{2,})([t7]|(?<!a)z+|\\*[*_])e*(?! is)(?<!(inking|eating) some shit)(?<!(are|and) shit)(?<!(is|ly) shit)|turd|poop?|piss(?! off)(?<!on the piss)|urine(?! sample)|semen|cum|sperm|(?#jizz/jizm)ji(z[zm]|sm)|ejaculat\w+|spunk|squirt(ing)?|spit|drool|saliva|vomit|puke|puking|throw\w*\W?up)([s5]|es)?' # ignoring stuff like "eat shit on the catwalk"/"eat shit off the floor/other people's plate"
+  - '(?#Are you a fucking.../Are you fucking kidding me/You gotta be fucking with me/etc.)(a?re? ?((?#you/yo)(Y+[o0ua]+|U+))( an?)?|(?#you/yo)(Y+[o0ua]+|U+)([''‘’´`]?ve| have|got|to|gotta)+ be) (?#fucking)(F+|P+h+|(?=Ef))(([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))|(?#   )(?#fricking/etc.)(?!(?<=F)(reak|lip)\S* out)((?<=F)(r[iea]+([ck]+|(?<=i)g+)|lip+|[''‘’´`\-]|(?=ing))|Ef+(?!f)))(?#ing)[i1!¡jl''‘’´`]?n[g''‘’´`]?(?<!\bfa[kc]in[g''‘’´`])(?<!\bfogging)(?# << End of "fucking"  )'
+  - '(?#for fuck sake)((for )?(?#fuck/frick/etc. when used as part of a phrase)(F+|P+h+|(?=Ef))(([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))|(?#   )(?#F/Frick/etc.)(?!(?<=F)(reak|lip)\S* out)(?<=F)(r[iea]+([ck]+|(?<=i)g+)|lip)?|Ef+(?!f))(?<!\bFAQ)(?<!(?-i:\bF[A-Z]\b))(?<!(?-i:\b[FP][A-Z]{2}\b))[s5]?(?# << End of "fuck"  )s? sake|FFS)'
+  - '(?#shut the fuck up/shut your god damn mouth/etc.)(Shut (?#the)(th|d)[eai] (?#fuck/frick/etc. when used as part of a phrase)(F+|P+h+|(?=Ef))(([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))|(?#   )(?#F/Frick/etc.)(?<=F)(r[iea]+([ck]+|(?<=i)g+)|lip)?|Ef+)(?<!(?-i:\b[FP][A-Z]{2}\b))(?# << End of "fuck"  ) up|STFU|shut (?#your)(y([o0u]+r|o)|ur)( \S+){0,2} mouth|keep (?#your)(y([o0u]+r|o)|ur)( \S+){0,2} mouth shut)'
+  - '(?#Shut up)((^\W*|[\n.,] ?|((wo)?man|dude|mate|m8|bro(ther)?|bruh|lady|fuckin\S*|(?#you/yo)(Y+[o0ua]+|U+)( also)?( |should|really|need to|just|can|could)+( also)?|so|oh|just|well|then) )shut up(?! (and (take|Dance|Sleep|Drive)|Meg|th|my|your (brain|thoughts))|by the Black Eyed Peas)|(?#   )Shut up ((?#you/yo)(Y+[o0ua]+|U+)))'
+  - '(?#get the fuck..[out/over/etc.]/get the hell..)((?#   )GTFO|(?#   )Get (?#the)(th|d)[eai] (Hell|(?#fuck/frick/etc. when used as part of a phrase)(F+|P+h+|(?=Ef))(([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))|(?#   )(?#F/Frick/etc.)(?!(?<=F)(reak|lip)\S* out)(?<=F)(r[iea]+([ck]+|(?<=i)g+)|lip)?|Ef+(?!f))(?<!\bFAQ)(?<!(?-i:\bF[A-Z]\b))(?<!(?-i:\b[FP][A-Z]{2}\b))[s5]?(?# << End of "fuck"  )))'
+  - '(?#Fuck out of here)(?#fuck/frick/etc. when used as part of a phrase)(F+|P+h+|(?=Ef))(([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))|(?#   )(?#F/Frick/etc.)(?!(?<=F)(reak|lip)\S* out)(?<=F)(r[iea]+([ck]+|(?<=i)g+)|lip)?|Ef+(?!f))(?<!\bFAQ)(?<!(?-i:\bF[A-Z]\b))(?<!(?-i:\b[FP][A-Z]{2}\b))[s5]?(?# << End of "fuck"  ) out(ta| of) here'
+  - 'up ((?#up yours)(Y([o0u]+r|o)|ur)s|(?#   )(?#up their ass)(Yo(ur)?|ur|their|h(er|is)) ((?#ass)([a@]|4(?!5))([s5$z]{2}|r+[s5$z][e3])|butt|bum)([e3]?[s5])?)'
+  - 'bollocks'
+action: filter
+action_reason: 'Argument Keyword: /u/{{author}} said, [{{match}}]. {{kind}} has been locked.'
+set_locked: true
+priority: 789
+
+---
+# Filter forbidden language - Possible Homophobia/etc.
+type: any
+title+body (regex):
+  - '(?#the f-word, short and long versions, with possible separators like f-a-...)((?# F )f(?!(g\b|gg|hgg?|h?gh?t)t?s?\b)f*h?|(?# PH )p(?!hgg?h?t?s?\b)p*h+)(?#only match separators in the short version if the A is there>)(?![^\w@]+h*[\W_]*(?# G )[g69](?![\W_]*g+h*[\W_]*o))[\W_]*(?# optional A )[a4@e3]*(?#notes>)(?!(?<=FA), )h*[\W_]*(?# G )[g69](?!\W(and a pint|ash|break|butt|end|packet|paper|smok\w*)s?\b)(?#notes>)(?!(?<=\bG) ?[=\-]? ? Sol\b)[\W_]*(?# optional G )[g69]*h*[\W_]*(?# optional O+T )([o0a4@e3i1!¡jlu]*[\W_]*[t7]+)?(ed|ing?|[o0a4@e3]ry|r?y|ie(r|st)|(?<=faggot)\w+(?#for unknown combinations))?[s5]?' # (the short no-vowel versions that are ignored at the start are in the "possible slurs" section)
+  - '(?#combinations like bookf**ot/etc.)(?=\w{7})\w+?fagg?(o|e(?<=McFagge))t[s5]?' # (the short version of the word is in the possible hate section because of false positives with video IDs in urls)
+  - '(?#censored version of the f-word [long version] with one non-word character [*, -, #, etc.])(?#  F >  )(f|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  A >  )(a|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  G >  )([g69]|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  optional G >  )([g69]|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))?(?#  O >  )(o|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  T >  )([t7]|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  optional S, no need for symbols since it would match either way >  )[s5]?' # the "(?!\S*?[^a-z0-9\s])" is to only match an asterisk or hyphen if there isn't another one somehwere after [] the "\\*" is in case the asterisk is escaped with a backslash due to Markdown italics
+  - '(?#fabbot, popular misspelling of the f-word)fab+ot[s5]?'
+  - '(?#puffter)p(u|oo)ff?t(er|ah)[s5]?'
+  - '(?#euphemisms/slang)(fudge\W?packer|muff\W?diver|(carpet|rug)\W?muncher|pillow\W?biter|shirt\W?lifter|shit\W?stabber|turd\W?burglar)[s5]?' # (alternative versions in the reporting section)
+  - '(bull)?(?=d[yi]ke)(?<!Van\W(?=Dyke\b))d[yi]ke[s5]?'
+  - '(tr[a@]nn(y|ies?)|trans(v[eai]st[iy]te|mental)|she\W?males?|trapsexual)[s5]?'
+  - 'gaye(st|r)'
+  - '(?#gayboy)gh?[a@4e][yi]\W?((?<=y)boys?|as(?#gay as hell/fuck/shit)|(?#shit)[s5$z]+h+([i1!¡jla]|(?!(eets?|iites?)\b)[i1!¡jle3]{2,})([t7]|(?<!a)z+|\\*[*_])e*)'
+  # "you're gay/what a gay/etc." are in the reporting "you" syntax
+  - 'femboys?'
+  - 'globo\W?homo[s5]?' # globalization with a "gay agenda", promotion of homosexuality
+action: filter
+action_reason: 'Homophobia Keyword: /u/{{author}} said, [{{match}}]. {{kind}} has been locked.'
+set_locked: true
+priority: 788
+
+---
+# Filter forbidden language - Possible Albeism.
+type: any
+title+body (regex):
+  - '(?#the r-word)(?=\br)(?<!I am )(?<!I[''‘’´`]m )(?<!\bIm )r+[\W_]*[e3a4@i1!¡jlw]*[\W_]*[t7]+[\W_]*[a4@e3]*[\W_]*r+[\W_]*[dt]+[\W_]*([e3i1!¡jl]+[\W_]*[dt]+[\W_]*)?[s5]?' # includes misspellings like "reatrds" and "rwtard"
+  - '(?#tard/dumbtard/etc.)[t7]+[a4@]+r+d+([s5]|[e3]*d+)*' # (fucktard/asstard/etc. are matched in the "asshole" syntax)
+  - '(?=re)(?#singer>)(?<!Des[''‘’´`])ree+s?\b(?#last name>)(?<!\w (?-i:Rees))(?<!(?-i:Rees(?= [A-Z])))'
+  - 'ass\W?burger[s5]?'
+  - '(nut\W?(case|job)|wack\W?job|mental case)s?'
+  - '(?#you need to get your head checked)((?#your)(y[o0u]+r|ur)|OP (needs to|should) (get|have) \w+)( \S+)? head checked'
+  - '(?#fucked in the head/touched in your head)(touche?d|(?#fucked)(F+|P+h+)([UA4@O0E3I]+|V?(?=[ckq])|\\*[^UA4@O0E3IV\s](?=[ckq]{2,}))+([ckq]+|cuk|g(g|(?=i)))(?#ed)[e3''‘’´`]?[dt](?! up)(?# << End of "fucked"  )) in ((?#the)(th|d)[eai](ir)?|(?#your)(y([o0u]+r|o)|ur)|his|her)( god[\W_]*d?amn?)? (head|brain)'
+  - '(?#seems like..)mental illness to me' # (also see '(it|that|this)[ ''‘’´`]?i?s a mental illness' in the homophobia section)
+  - '(?=schizo)(?<!\b[a''‘’´`i]m a )(?<!I was a )(?<!(?<!t )been a )(?<!I (was always|always was) a )(?<!(\Bas|\b[a''‘’´`i]m) being a )(?<!got a )(?<!\b[a''‘’´`i]m such a )(?<!\b[a''‘’´`i]m too much of a )(?<!(?=feeling)(?<!you )(?<!be )(feel|look|ound)ing like a )(?<!(?=feeling)(?<!you )(?<!be )feeling like such a )(?<!(fe(el|lt)|look|oked|ound|nded)(?<!t you \w{4}) like a )(?<!I (fe(el|lt)|look|oked|ound|nded) like such a )(?<!myself a )(?<!\bme a )(?<!\bUs )(?<!called a )(?<!n[o''‘’´`]t a )(?<![\"“”‟„])(?<!n[o''‘’´`]t )schizo(id|post\w*)?[s5]?'
+action: filter
+action_reason: 'Albeism Keyword: {{match}}. /u/{{author}} said, [{{match}}]. {{kind}} has been locked.'
+set_locked: true
+priority: 787
+
+---
+# Filter forbidden language - Possible Racism/racial slurs, ethnic bigotry.
+type: any
+title+body (regex):
+  # Resources: http://www.rsdb.org/full / https://en.wikipedia.org/wiki/List_of_ethnic_slurs_and_epithets_by_ethnicity (and/or: https://en.wikipedia.org/wiki/List_of_ethnic_slurs)
+  - '(?#the n-word with a hard r)\w*?(?# N > )[nńǹṅn̈ňñņŉṇṋṉΝ]+(?<!\b[oi]n)(?!(?<=\Bn) (?-i:IG) )[\W_]*(?# Optional I/EE > )([i1!¡jlıíìîïǐĭīĩįḯỉȉȋịᶖḭі]+[\W_]*|([e3éèėêëěĕēẽęȩếềḗḕễḝẻȅȇểẹḙḛệЕе][\W_]*){2,})(?# 2 G‘s > )(g[\W_]*){2,}(?# E > )([e3éèėêëěĕēẽęȩếềḗḕễḝẻȅȇểẹḙḛệЕе][\W_]*)+(?# R > )r+\w*' # with at least 2 g's + the [\W_]* is for possible separators like n-i-..., for African American
+  - '(?#short version of the n-word + variations/combinations of it)[nńǹṅn̈ňñņŉṇṋṉΝ]+[i1!¡jlıíìîïǐĭīĩįḯỉȉȋịᶖḭі]+g+(?![\-*\\])(?# optional suffixes > )([e3]+r+(?<!niger\b)|g+[e3]+|r+([o0ae3]*|r+[o0]+[i1!¡jl]+d+)|r+[e3]+[st]+[e3]*|l*[e3]+[t7]+[e3]*|n+[o0]+g+|town|a+b+[o0]+|[e3]+r+[e3]+s+[t7]+)?s*' # (like niggres/nignog) [] here only 1 g is required and no separators (and mostly no e after the g)
+  - '(?#common misspellings of the n-word)((?#nibber)n[i1!¡jl]b+[e3]r|nygg[e3]r)[s5]?'
+  - '(?#censored version of the n-word with one non-word character [*, -, #, etc.])(?#  N >  )(n|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  I >  )(i|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  2 Gs >  )(g|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s])){2}(?#  E >  )(e|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  R >  )(r|(\\*[*_]|[^\w\s])(?!\S*?[^a-z0-9\s]))(?#  optional S, no need for symbols since it would match either way >  )[s5]?' # the "(?!\S*?[^a-z0-9\s])" is to only match an asterisk or hyphen if there isn't another one somehwere after [] the "\\*" is in case the asterisk is escaped with a backslash due to Markdown italics
+  - '((?#   )c[o0]{2}n(head|town|y|i?e?|er)?|(?#   )(n[e3])?gr[o0][i1!¡jl]d|(?#   )[jz][i1!¡jl](g+(([a4@]|[e3]r)\W?(b([o0]+|u)(ing)?|[o0]{2}ni)|[e3]r)|j+ib[o0]{2})|(?#   )she\W?boon|(?#   )boot\W?lip\w*|(?#   )jungle\W?bunn(y|ie)|(?#   )p[o0]rch\W?m[o0]nk[iey]+|(?#   )spear\W?chucker|(?#   )moon\W?cricket)[s5]?' # for African American
+  - '((dark|black)(e?y|ies)|(?#   )(mud|tar)\W?(skin(?!\W(mask|care))s?|people|child(ren)?|kids?|bab(y|ies))|(?#   )(?#shit)[s5$z]+h+([i1!¡jla]|(?!(eets?|iites?)\b)[i1!¡jle3]{2,})([t7]|(?<!a)z+|\\*[*_])e*[^ \w]?skins?)' # for African American/people with dark skin
+  - '(afri)?coon[sz]*'
+  - 'whiterights'
+  - 'd[ieao]+nd[ou]+([mn]+[oaiu][phf]+[eioau][mn]+[sz]*)?'
+  - 'w[e3]t[\W_]*b[a4@]ck[s5]?' # for Latin American
+  - 'b[e3][a4@e3]n[e3]r[s5]?' # for Mexican/Hispanic
+  - 'sp[i1!¡jl][ck]{1,2}[s5]?' # for Hispanic
+  - '(towel|rag)[\W_]*head[s5]?' # for Muslim/Arab/Sikh/more
+  - '(sand|dune)[\W_]*(n[i1!¡jl]g(?!ht)|c[o0]{2}n|monk[iey]+)\w*' # for desert area, especially Saudi Arabia/African continent
+  - '(sand)?.?n[aei]+g+(ger|ga|a)?.?(nog+|[phf]+[eoia]+g+([ieao]+[tryie]+)?)[sz]*'
+  - '(k[i1!¡jly]ke|hook\W?nose|heeb|yid(?! army))[s5]?' # for Jewish
+  - '(slant(?![^yei\W])\w*\W?eye[sd]?|side\W?ways?\W?(vag(ina)?|puss[yie]+|cooter)s?)' # for East Asian
+  - 'cock.?roach(es)?'
+  - 'parasite[sz]*'
+  - 'ray.?cis(s|t)?'
+  - '(out)?.?breed'
+  - 'anti.?white'
+  - 'katsap[sz]*'
+  - '[ey]?uro([phf]+[eoia]+g+([ieao]+[tryie]+)?[sz]*|trash)'
+  - 'ameri(turd|cunt|[phf]+[eoia]+g+([ieao]+[tryie]+)?)[sz]*'
+  - 'd[ie][mn]+d+[ou]+([mn]+[oui]+[phf]+[ioea]+[nm]+[sz]*)?'
+  - 'g[o0]{2}k(y|eye)?[s5]?' # for Korean/East Asian
+  - 'ch[i1!¡jl]n[ck](y|ie)?[s5]?' # for Chinese/East Asian
+  - '(chinam[ae]n|ching[\W_]*chong)' # for Chinese
+  - 'jap[s5]?' # for Japanese
+  - 'dothead[s5]?' # for Indian (version with a separator in the reporting section)
+  - '(feather\W?head|injun|timber\W?n[i1!¡jl]g(?!ht)\w*)[s5]?' # for Native American
+  - 'greaseball[s5]?' # for Italian/Mediterranean/Southern European/Hispanic
+  - 'guid(o|ette)[s5]?' # for Italian
+  - '(g[yi]p+([poy]|ie)|pik(e?y|er))[s5]?' # for Romani/Irish travellers/Egyptian # for Romani/Irish travellers/Egyptian (other versions are in the reporting section)
+  - 'pol[ao]c?k[s5]?' # for Polish
+  - 'seppo[s5]?' # for American
+  - '((?#   )honk(e?y|ie)(?!\W+tonk)|(?#   )whit(e?y|ie)s(?#singular is in reporting)|(?#   )mayo(nnaise)?\W?monk[iey]+|(?#   )white\W?devil|(?#   )gweilo)[s5]?' # for White/Caucasian (cumskin is matched in the cumslut syntax)
+  - '((?=redneck)(?<!might be a )redneck|(?=hick)(?<!Bill )hick|(?=hillbill)(?<!Beverly )(?<!Hollywood )hillbill(y|ie)(?! Elegy)|(white|trailer)\W?trash)s?' # for rural/poor White/Caucasian
+  - 'in[\W_]*bred[s5]?'
+  - '(sheep|goat|donkey)\W?(fuck|shag)\w*'  
+  - '((?#hitler)h[i1!¡jl]tl[e3]r|nazis) ((was|were)( right| ?n[o''‘’´`]?t wrong| ((?#the)(th|d)[eai] (fuckin\S )?)?hero(e?s)?)|did ?n[o''‘’´`]?t do( \S+)? wrong|h(ei|ie)l h[i1!¡jl]tl[e3]r)'
+  - 'holo[\W_]*hoax([e3]?[s5])?' # holocaust denial
+  - '(?=(The holocaust|Genocide|There was))(?<!saying )(?<!say )(?<!that )((?#   )(The holocaust|Genocide) ((didn[ ''‘’´`]?t|never) happened|(is|was) a lie)|(?#   )There was( no|n[ ''‘’´`]?t an?y?)( \w+)? (genocide|holocaust))' # holocaust/genocide denial
+~title+body (regex, includes-word): ['dando', 'raccoons?', 'tycoons?']
+action: filter
+action_reason: 'Racism/Racial Slurs Keyword: {{match}}. /u/{{author}} said, [{{match}}]. {{kind}} has been locked.'
+set_locked: true
+priority: 786
+
+---
+# Filter forbidden language - Violent Rhetoric
+type: any
+title+body (regex):
+    - '(blow|hang|neck|murder|shoot|drown|r[ao]pe|cut|burn) (the(y|m|ir)|y?o?ur|it|h(i[ms]|er)) ?(sel(f|ves?))'
+    - 'k[yht]s'
+    - '(deserves? to|(hope|wish) (they|(yo)?u|s?he)) ((should|would|could) )?(just )?(fuckin[g'']? |godd?amn? )?(commit (die|suicide)|die[sd]?|(be|g[eo]ts) (fuckin[g'']? |godd?amn? )?(shot|killed|murdered|beat( up)?|raped|run over|hung))'
+    - 'play in (some )?traffic'
+    - 'eat a (bullet|gun)'
+    - 'gu?i?ll?otine?[ds]?'
+    - 'pull the (fuckin[g'']? |godd?amn? )?trigger'
+    - "blow (yo)?urself up"
+    - 'gas (all|the|all the) (jews|kike?l?s|niggers|spi[ck]s)'
+    - "get (a|the) ?(rope|noose)"
+    - "h(a|u)ng (for treason|him|her|them|(yo)?urself)"
+    - "I\\s*hope\\s*(you|she|he|they)\\s*dies?"
+    - "(kill|nuke|glass) ?all"
+    - "gets? found (raped|murdered)"
+    - "defends? a killer"
+    - "take (her|him|his|this) (ass|bastard|bitch) out"
+    - "rot (in hell|in a cell|forever)"
+    - "light them up"
+    - "blows? (the(y|m|ir)|my|y?o?ur|it|h(i[ms]|er)).?((mother|motha|mutha)?.?(fuck[ie]n[g'']?)?)? brains? out"
+    - "drop(ping|s)? the soap"
+    - "cops? (shoot|murder)(ing)? (citizens|people)"
+~title+body (includes-word, regex): ["kills? h(i[ms]|er)) ?(sel(f|ves)?"]    
+ignore_blockquotes: true
+action: filter
+action_reason: 'Violent Rhetoric: {{match}}. /u/{{author}} said, [{{match}}]. {{kind}} has been locked.'
+set_locked: true
+priority: 785
+
+---
+# Filter forbidden language - Personal attack filter
+type: any
+title+body (regex): ['shit[-_ ]?hole', 'libshits?', 'waste of oxygen', 'neck[ -_]?beards?', 'sickular', 'douche([ -_]?bag)?', 'white[- _]?k?ni(te|ght)s?', 'sh[ie]*t.?lord[sz]*', '^Found the', 'SJWs?', 'bleeding.?heart']
+action: filter
+action_reason: 'Personal Attack Keyword: {{match}}. /u/{{author}} said, [{{match}}]. {{kind}} has been locked.'
+set_locked: true
+priority: 784
+
+---
+
+title+body (regex): ['bigot(s|ed)', 'monk(ey|ies)', 'gorillas?', 'chimpanzees?', 'interracial', 'great\W?apes?', 'mud\W?huts?', 'baboons?', 'white\W?blood', 'w?raci[s]+s', 'urban\W?thugs?', 'white\W?devils?', 'white\W?(supremacists?|man|males?|powers?|guys?|men|people|lives?)', 'persons?\s*of\s*color', 'race\W?mixing', 'ethno\W?nationalist', 'cis\W?(males?|felames?|gender)', 'red\W?pille?r?s?', 'man\W?splaining', 'al sharpton', 'eric holder', 'jesse jackson', 'trayvon martin', '(george )?zimmerman', 'michael brown', 'darren wilson', 'eric garner', 'daniel pantaleo', 'freddie grey', 'ferguson', 'baltimore riot(s|ing|ers?|ed)', 'Zulus?', 'welfare\W?queens?', 'check (his|her|their|your|you.re|ur|yo) privilege', '(collapse|death) of.*(the west|western civili[sz]ation)', 'destroy our communit(y|ies)', 'false facts?', 'fit the narrative', 'gas chamber.*(hoax|myth)', '(s?he|they|yo|we).*gud (boy|girl)', 'gyps?(ys?|ies?)?', 'race\W?card', 'klan', 'kkk', 'queers?', 'lynch(e[ds]|ing)?', 'str[iu]ng (\w+ )?up', 'twerk(s|ed|ing)?', 'moors?', 'antifa', 'engrish', 'black on black', 'blacks kill', 'blacks commit', 'reverse racism', 'black on white', 'never relax', 'around blacks', 'he was a good boy', 'he went to church', 'he was going to college', 'black lives splatter', 'all lives matter']
+
+~title+body (regex): ["(Roxane|enola) gay", "(Scott|david) lynch", "Project"]
+action: report
+
+report_reason: "Possible Racism - [{{match}}]"
+
+---
+
+# keyword blacklist  - remove comments.
+    type: comment
+    author:  
+        ~name: ["TotesMessenger", "Repost-Tracker"] 
+    title+body (regex): ["(?!homo\\W?sapien)homosb?\\", "(dot|rag|towel)\\W?heads?", "(p[0o]rch|sand)\\W?m[0o]nk(ey|ie|y)s?", "(p[0o]rch|sand)\\W?nigg(er|r|a|let)s?", "(ph|f)[@a]gg?([e0aio]t|oted|otry)?s?", "(re|fuck|jerk|lib|republi)?(?<!bas)tard(s|ed(ly)?)?", "(shit|mud)\\W?skins?", "ape\\W?fricans?", "beane[ry]s?", "beetusbehemoths?", "boot\\W?lips?", "chimpires?", "china\\W?m[ae]n", "chinks?", "christ\\W?killers?", "cock\\W?suckers?", "coons?(y|i?e?s?|er)", "dark(e?y|ies?)", "dind[ou]s?", "dune\\W?coone?r?s?", "fupas?", "g(ooks?|00ks?)", "gays?(est|ly|er)", "gaywads?", "ghey", "gooks?", "goy(im)?s?", "groids?", "h[i!¡y]mies?", "half\\W?breeds?", "happy\\W?merchants?", "heebs?", "high\\W?yellows?", "holo\\W?hoaxe?s?", "honk(ie|ey|y)s?", "j[!i]gg?[aer]+(boo?s?|b00?s?)", "jew\\W?(tubes?|nited)", "jig\\W?apes?", "jigg?[aer]+(b[0o]ing)", "juden", "jungle\\W?bunn(y|ie)?s?", "k[iy]+kes?", "kkk", "klan", "lady\\W?boys?", "lesbos?", "mignorants?", "mongoloids?", "moon\\W?crickets?", "mud\\W?(child(ren)?|skin)s?", "muslimes?", "n[1!i]gs?-?(?!ht)", "n[i!j1e]+gg?(rs?|ett?e?s?|lets?|ress?e?s?|r[a0oe]s?|[ie@ao0!]rs?|r[o0]ids?|ab[o0]s?|erest)", "n[i1][g6][g6]?(?!ht)([e3]r)?(n[o0]g|l[e3]t|r[e3][s5][s5])?([e3]?[s5])?", "nig\\W?town", "nigg(er|r|r?a|lett?)s?z?(?!ht)", "nigg?[aeoi]s?", "nig(gs?|s)", "obeasts?", "pike?(ys?|ies)", "queer\\W?bags?", "shee?\\W?boons?", "shemales?", "shoahs?", "spear\\W?chuckers?", "suspooks?", "tarbab(ys?|ies?)", "wet\\W?backs?", "whore\\W?mouth", "worldstar", "/$LGX"]
+    action: remove
+    action_reason: "150. nasty words filter: [{{match}}]"
+
+---
+
+# Racism / Hate speech / Redditisms / Sexual comments
+    type: any
+    title+body (regex, includes-word): ["(ti(tt|dd)(y|ie)s?|tits?|boob(a|y|ie)?s?|breasts?|milkers?|rack|cleavage|ass|butt|anal|muff|cunts?|pole|dick|cock|dsl)", "(n[ai](gg|bb)?(er|a)?s?|ni\U0001F171\U0001F171(er|a)?s?|kangs|coon|dindu)", "(fagg?([eioy]t)?(ry)?s?|d[iy]ke|tra(p|ns)|trann(y|ie)?s?|shemales?|ftm|mtf)", "(rap(e|ed||er|ist|ing)?s?)", "(breed(able)?|fuckable|bang(able)?|peg(ging)?s?|cum|herp(es)?s?|couch|aids?)", "(whores?|slut(ty)?s?|bitch(es)?|thots?|grenade|fat)", "(hot(t|ty|tie)?s?|/10|bab(e|y)|bb|bby|sexy?)", "roast(ing)?s?", "I want to", "I'd like to", "(incel|íncel)", "you asked for", "porn", "dtf", "horny", "slam pig", "(eat(ing?)s? ass)", "body count", "throat goat", "comments?", "blow job", "blowjob"]
+    action: filter
+    action_reason: Possible hate/sexual speech [{{match-1}}]
+---
